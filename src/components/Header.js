@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = ({ image, title, subtitle, textButton, showButton, link }) =>
+const Header = ({ title, subtitle, textButton, showButton, link }) =>
   (
-    <header className='masthead' style={{ BackgroundImage: image }}>
+    <header className='masthead'>
       <div className='container'>
         <div className='intro-text'>
           <div className='intro-lead-in'>{title}</div>

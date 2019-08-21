@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Header from './Header'
+import Services from './Services'
+import Portfolio from './Portfolio'
+import Team from './Team'
+import Contact from './Contact'
+import Footer from './Footer'
 
 class Home extends Component {
   render () {
@@ -11,6 +15,11 @@ class Home extends Component {
           textButton='LEARN MORE'
           showButton
           link='/services' />
+        <Services />
+        <Portfolio />
+        <Team />
+        <Contact />
+        <Footer />
       </div>
     )
   }
