@@ -1,19 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Header = () =>{
-  return (
-    <div>
-      <header className='masthead'>
-        <div className='container'>
-          <div className='intro-text'>
-            <div className='intro-lead-in'>Welcome To Our Studio!</div>
-            <div className='intro-heading text-uppercase'>It's Nice To Meet You</div>
-            <a className='btn btn-primary btn-xl text-uppercase js-scroll-trigger' href='#services'>Tell Me More</a>
-          </div>
+const Header = ({ image, title, subtitle, textButton, showButton, link }) =>
+  (
+    <header className='masthead' style={{ BackgroundImage: image }}>
+      <div className='container'>
+        <div className='intro-text'>
+          <div className='intro-lead-in'>{title}</div>
+          <div className='intro-heading text-uppercase'>{subtitle}</div>
+          {showButton &&
+          <Link className='btn btn-primary btn-xl text-uppercase js-scroll-trigger' to={link}>{textButton}</Link>}
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   )
-}
 
 export default Header
