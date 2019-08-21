@@ -1,9 +1,7 @@
 import React from 'react'
-import Footer from './Footer'
 
 class Contact extends React.Component {
   render () {
-    const { isPresent } = this.props
     return (
       <div>
         <section className='page-section' id='contact'>
